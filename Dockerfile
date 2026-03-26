@@ -2,7 +2,7 @@ FROM node:lts-alpine
 
 WORKDIR /app
 
-RUN npm install -g pnpm
+RUN npm install -g pnpm@10.27.0
 
 COPY package*.json ./
 
