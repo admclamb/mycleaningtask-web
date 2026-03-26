@@ -12,4 +12,4 @@ COPY . ./
 
 RUN pnpm run build
 
-CMD ["pnpm", "run", "start"]
+ng serve --host 0.0.0.0
