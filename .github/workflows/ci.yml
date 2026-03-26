@@ -40,7 +40,7 @@ jobs:
         run: pnpm format
 
       - name: Run build
-        run: pnpm build --configuration=staging
+        run: pnpm build
         env:
           NODE_ENV: production
           NG_APP_API_SERVER_URL: ${{ secrets.NG_APP_API_SERVER_URL }}
