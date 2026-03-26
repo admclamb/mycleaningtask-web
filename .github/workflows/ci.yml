@@ -52,7 +52,7 @@ jobs:
           NG_APP_AUTH0_USE_REFRESH_TOKENS: ${{ secrets.NG_APP_AUTH0_USE_REFRESH_TOKENS }}
 
       - name: Run tests
-        run: pnpm test --watch=false --code-coverage
+        run: pnpm test --watch=false --coverage
         env:
           NODE_ENV: test
           NG_APP_API_SERVER_URL: ${{ secrets.NG_APP_API_SERVER_URL }}
