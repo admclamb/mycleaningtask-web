@@ -12,4 +12,4 @@ COPY . ./
 
 RUN pnpm run build
 
-CMD ["pnpm", "run", "start"]
+CMD ["pnpm", "exec", "ng", "serve", "--host", "0.0.0.0", "--port", "4200"]
